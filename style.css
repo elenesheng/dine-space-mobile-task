@@ -1,0 +1,55 @@
+@media only screen and (max-width: 735px) {
+    .cuisine-side-scroll {
+        width: 80%;
+        margin: auto;
+    }
+    .item-wrapper {
+        font-size: 27px;
+    }
+    .cuisines {
+        overflow: scroll;
+        position: relative;
+        top: 9px;
+        width: 85%;
+    }
+    .filter {
+        padding: 0px 10px;
+        width: 15%;
+    }
+}
+
+
+.wrapper, .filter, .cuisines, .item-wrapper {
+    display: flex;
+    align-items: center;
+}
+.filter {
+    background: #5b6bc84d;
+    border-radius: 4px;
+    width: 84px;
+    height: 30px;
+    justify-content: space-evenly;
+    cursor: pointer
+}
+
+.cuisine-side-scroll span {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.cuisines {
+    margin-left: 20px;
+}
+.item-wrapper img {
+    margin-right: 5px;
+}
+.item-wrapper {
+    margin-right: 20px;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+

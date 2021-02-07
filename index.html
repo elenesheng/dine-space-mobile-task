@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Two</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="cuisine-side-scroll">
+        <div class="wrapper">
+            <div class="filter" id="filter">
+                <img src="images/filter.png" alt="filter-icon" />
+                <span id="filter-title"> Filter</span>
+            </div>
+            <div class="cuisines" id="cuisines">
+                <div class="item-wrapper">
+                    <img src="images/burger.png" alt="burger" />
+                    <span>Pizza</span>
+                </div>
+                <div class="item-wrapper">
+                    <img src="images/pizza.png" alt="burger" />
+                    <span>Burger</span>
+                </div>
+                <div class="item-wrapper">
+                    <img src="images/chicken.png" alt="burger" />
+                    <span>Chicken</span>
+                </div>
+                <div class="item-wrapper">
+                    <img src="images/burger.png" alt="burger" />
+                    <span>Pizza</span>
+                </div>
+                <div class="item-wrapper">
+                    <img src="images/burger.png" alt="burger" />
+                    <span>Pizza</span>
+                </div>
+                <div class="item-wrapper">
+                    <img src="images/pizza.png" alt="burger" />
+                    <span>Pizza</span>
+                </div>
+                <div class="item-wrapper">
+                    <img src="images/chicken.png" alt="burger" />
+                    <span>Pizza</span>
+                </div>
+                <div class="item-wrapper">
+                    <img src="images/burger.png" alt="burger" />
+                    <span>Pizza</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function scrollHandler(e) {
+        let filterButton = document.getElementById("filter");
+        let cuisines = document.getElementById("cuisines");
+        let filter = document.getElementById("filter-title");
+
+        let winScroll = e.target.scrollLeft;
+
+        if (winScroll>0) {
+            filterButton.style.width = "10%";
+            cuisines.style.width = "90%";
+            filter.style.opacity = "0"
+        } else {
+            filterButton.style.width = "84px";
+            cuisines.style.width = "85%";
+            filter.style.opacity = "1"
+
+        }
+    }
+
+    cuisines.addEventListener("scroll", scrollHandler)
+
+
+</script>
