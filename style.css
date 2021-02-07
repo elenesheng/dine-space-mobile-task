@@ -28,7 +28,7 @@
     .cuisines {
         overflow: scroll;
         position: relative;
-        top: 9px;
+        /* top: 9px; */
         width: 85%;
     }
     .filter {
