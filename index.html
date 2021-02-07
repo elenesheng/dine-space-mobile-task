@@ -63,13 +63,15 @@
         let winScroll = e.target.scrollLeft;
 
         if (winScroll>0) {
-            filterButton.style.width = "10%";
+            filterButton.style.animation = "smallerdiv 0.5s forwards";
             cuisines.style.width = "90%";
-            filter.style.opacity = "0"
+            filter.style.opacity = "0";
+            filter.style.fontSize = "0px"
         } else {
-            filterButton.style.width = "84px";
+            filterButton.style.animation = "biggerdiv 0.5s forwards";
             cuisines.style.width = "85%";
-            filter.style.opacity = "1"
+            filter.style.opacity = "1";
+            filter.style.fontSize = "16px"
 
         }
     }

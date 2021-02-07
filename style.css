@@ -1,3 +1,22 @@
+@keyframes smallerdiv {
+    from {
+      width: 84px;
+    }
+    to {
+      width: 25px;
+    }
+  }
+
+  @keyframes biggerdiv {
+    from {
+      width: 25px;
+    }
+    to {
+      width: 84px;
+    }
+  }
+
+
 @media only screen and (max-width: 735px) {
     .cuisine-side-scroll {
         width: 80%;
@@ -15,6 +34,17 @@
     .filter {
         padding: 0px 10px;
         width: 15%;
+        transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+    }
+    .filter span {
+        transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+    }
+    .wrapper {
+        height: 200px
     }
 }
 
